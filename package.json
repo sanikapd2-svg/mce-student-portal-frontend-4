@@ -1,14 +1,13 @@
 {
-  "name": "edugamehub-frontend",
+  "name": "edugamehub_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "npx vite build",
+    "preview": "vite preview",
+    "postinstall": "chmod +x node_modules/.bin/* || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
